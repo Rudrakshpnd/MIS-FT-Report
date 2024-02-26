@@ -5,6 +5,11 @@
 <div class="container" id="dashboard-container" style="display:block">
     
     <ul class="responsive-table">
+        <li class="table-header1">
+            <div class="col col-1">Department</div>
+            <i id="createbtn" class='bx bx-plus align-items-xl-end  bx-border '></i>
+            
+        </li>
         <li class="table-header">
             <div class="col col-1">Job Id</div>
             <div class="col col-2">Customer Name</div>
@@ -69,12 +74,8 @@
             <div class="col col-3" data-label="Amount">$350</div>
             <div class="col col-4" data-label="Payment Status">Pending</div>
         </li>
-        <li class="table-row">
-            <div class="col col-1" data-label="Job Id">42442</div>
-            <div class="col col-2" data-label="Customer Name">Jennifer Smith</div>
-            <div class="col col-3" data-label="Amount">$220</div>
-            <div class="col col-4" data-label="Payment Status">Pending</div>
-        </li>
+        
+
         <li class="table-row">
             <div class="col col-1" data-label="Job Id">42257</div>
             <div class="col col-2" data-label="Customer Name">John Smith</div>
@@ -114,5 +115,36 @@
         </li>
     </ul>
 </div>
+
+<div id="popup-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <p>Popup content goes here...</p>
+
+        <div class="form login_form">
+            <form asp-controller="Department" asp-action="Create">
+                <h2>Create</h2>
+
+                <div class="input_box">
+                    <input type="text" placeholder="Enter your name" required />
+                    
+                </div>
+                <div class="input_box">
+                    <input type="text" placeholder="Amount Due" required />
+                   
+                </div>
+
+                
+
+                <button class="button">Save </button>
+
+              
+            </form>
+        </div>
+    </div>
+</div>
+
+
 
             
